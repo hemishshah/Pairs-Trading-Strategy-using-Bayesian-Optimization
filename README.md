@@ -1,42 +1,53 @@
-# Pairs Trading Strategy using Bayesian Optimization
-
-## Overview
-This project implements a **pairs trading strategy** that identifies optimal cointegrated pairs across multiple sectors and applies a **Bayesian optimization** approach to fine-tune hyperparameters for trade execution. The strategy leverages **ARIMA models** to forecast price movements and uses **backtesting** to evaluate performance, outperforming the benchmark by **30%**.
-
-## Key Features
-- **Cointegration Analysis:**
-  - Identifies statistically significant pairs using the **Engle-Granger test**.
-  - Applies **Johansen’s test** for multivariate cointegration verification.
-  
-- **Time Series Forecasting:**
-  - Develops **ARIMA models** to predict price movements and residual spreads.
-  
-- **Hyperparameter Optimization:**
-  - Optimizes **10^6 hyperparameters** (buy-sell thresholds, rolling window size, etc.).
-  - Uses **Bayesian optimization** (via `scikit-optimize`) to refine strategy performance.
-  
-- **Backtesting & Performance Evaluation:**
-  - Implements a **backtest engine** to simulate real-world performance.
-  - Compares results against **benchmark strategies**.
-  - Achieves a **30% improvement over baseline models**.
-
-## Data Sources
-- Stock price data sourced from **Yahoo Finance** using `yfinance`.
-- Sector classification retrieved from **Fama-French data**.
-
-
-## Results
-- The strategy was **backtested on 10 years of data**.
-- Bayesian optimization significantly improved the **Sharpe ratio** and **profitability**.
-- The final model outperformed traditional pairs trading approaches by **30%**.
-
-## Next Steps
-- Extend to **crypto pairs trading**.
-- Implement **reinforcement learning** for adaptive trading.
-- Enhance execution logic with **market microstructure analysis**.
-
-## Author
-**Hemish Shah**
+Certainly! Here's a more concise version of the README file:
 
 ---
-*For detailed implementation, please check the source code in the repository.*
+
+# Optimized Algorithmic Pairs Trading
+
+## Project Overview
+
+This project implements an optimized algorithmic trading strategy based on **pairs trading**. The strategy involves identifying cointegrated pairs of stocks, forecasting price movements using ARIMA models, and optimizing trading parameters using Bayesian optimization. The strategy is backtested and compared to a benchmark to evaluate its performance.
+
+### Key Features:
+- **Cointegration Analysis**: Identifying cointegrated pairs of stocks.
+- **ARIMA Forecasting**: Using ARIMA models to predict stock prices.
+- **Bayesian Optimization**: Optimizing trading parameters for better performance.
+- **Backtesting**: Testing the strategy on historical data and comparing it to a benchmark.
+
+## Files in This Repository:
+- **experiment.ipynb**: Core experiments including data collection, cointegration testing, model training, optimization, and backtesting.
+- **new_test.ipynb**: Additional tests and analyses.
+- **src/**: Source code for utilities, models, and optimization.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/AlgorithmicPairsTrading.git
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install pandas numpy matplotlib statsmodels scikit-learn skopt yfinance
+    ```
+
+## Usage
+
+1. **Data Collection**: Download stock price data using Yahoo Finance.
+2. **Cointegration Test**: Identify cointegrated pairs using the `cointegration_test()` function.
+3. **ARIMA Forecasting**: Train an ARIMA model on selected pairs.
+4. **Optimization**: Use **Bayesian Optimization** to fine-tune strategy parameters.
+5. **Backtest**: Evaluate the strategy’s performance with the `backtest_strategy()` function.
+
+## Performance Metrics
+- **ROI**: Return on investment.
+- **Sharpe Ratio**: Risk-adjusted return.
+- **Max Drawdown**: Largest peak-to-trough decline.
+- **Benchmark Comparison**: Performance relative to a market index (e.g., S&P 500).
+
+## Conclusion
+This project optimizes a pairs trading strategy using statistical methods and machine learning to achieve superior performance in the financial market.
+
+---
+
+This version is much shorter and to the point. You can easily adapt this further depending on specific details of your project.
