@@ -12,7 +12,7 @@ This project implements a **pairs trading strategy** that identifies optimal coi
   - Develops **ARIMA models** to predict price movements and residual spreads.
   
 - **Hyperparameter Optimization:**
-  - Optimizes **106 parameters** (buy-sell thresholds, rolling window size, etc.).
+  - Optimizes **10^6 hyperparameters** (buy-sell thresholds, rolling window size, etc.).
   - Uses **Bayesian optimization** (via `scikit-optimize`) to refine strategy performance.
   
 - **Backtesting & Performance Evaluation:**
