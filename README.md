@@ -29,11 +29,6 @@ This project implements an optimized algorithmic trading strategy based on **pai
 4. **Optimization**: Use **Bayesian Optimization** to fine-tune strategy parameters.
 5. **Backtest**: Evaluate the strategy’s performance with the `backtest_strategy()` function.
 
-## Performance Metrics
-- **ROI**: Return on investment.
-- **Sharpe Ratio**: Risk-adjusted return.
-- **Max Drawdown**: Largest peak-to-trough decline.
-- **Benchmark Comparison**: Performance relative to a market index (e.g., S&P 500).
 
 ## Conclusion
 This project optimizes a pairs trading strategy using statistical methods and machine learning to achieve superior performance in the financial market.
