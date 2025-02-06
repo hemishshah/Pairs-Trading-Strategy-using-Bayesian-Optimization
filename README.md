@@ -24,24 +24,6 @@ This project implements a **pairs trading strategy** that identifies optimal coi
 - Stock price data sourced from **Yahoo Finance** using `yfinance`.
 - Sector classification retrieved from **Fama-French data**.
 
-## Installation
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/pairs-trading-bayes.git
-cd pairs-trading-bayes
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Usage
-```python
-from strategy import PairsTradingStrategy
-
-# Initialize and run the strategy
-strategy = PairsTradingStrategy()
-strategy.run()
-```
 
 ## Results
 - The strategy was **backtested on 10 years of data**.
