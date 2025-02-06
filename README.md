@@ -1,4 +1,4 @@
-Certainly! Here's a more concise version of the README file:
+
 
 ---
 
@@ -19,17 +19,7 @@ This project implements an optimized algorithmic trading strategy based on **pai
 - **new_test.ipynb**: Additional tests and analyses.
 - **src/**: Source code for utilities, models, and optimization.
 
-## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/AlgorithmicPairsTrading.git
-    ```
-
-2. Install dependencies:
-    ```bash
-    pip install pandas numpy matplotlib statsmodels scikit-learn skopt yfinance
-    ```
 
 ## Usage
 
@@ -48,6 +38,3 @@ This project implements an optimized algorithmic trading strategy based on **pai
 ## Conclusion
 This project optimizes a pairs trading strategy using statistical methods and machine learning to achieve superior performance in the financial market.
 
----
-
-This version is much shorter and to the point. You can easily adapt this further depending on specific details of your project.
