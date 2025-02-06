@@ -2,7 +2,7 @@
 
 ---
 
-# Optimized Algorithmic Pairs Trading
+# Pairs Trading Strategy using Bayesian Optimization
 
 ## Project Overview
 
